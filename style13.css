@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* --- HEADER --- */
+.header {
+    display: flex;
+    justify-content: space-between; /* Đẩy logo và menu ra 2 bên */
+    align-items: center;
+    background-color: #333;
+    padding: 15px 20px;
+    color: white;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Khoảng cách giữa các mục menu */
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* --- HERO SECTION --- */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* --- SERVICES SECTION --- */
+.services {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.service-container {
+    display: flex;       /* Dàn ngang các dịch vụ */
+    flex-wrap: wrap;     /* Cho phép tự động xuống dòng nếu thiếu chỗ */
+    justify-content: space-around; 
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.service {
+    flex: 1; /* Các cột tự động giãn đều nhau */
+    min-width: 250px; /* Đảm bảo cột không bị bóp quá nhỏ */
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* --- TESTIMONIALS SECTION --- */
+.testimonials {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.testimonial {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/* --- FOOTER --- */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
